@@ -1,0 +1,19 @@
+
+.styleHeader {
+  /* background-color: red; */
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+}
+.logoName {
+    display: flex;
+}
+.nav {
+    display: flex;
+    margin-top: 10px;
+    margin: auto;
+}
+img{
+    height: 40px;
+    border-radius: 100px;
+}

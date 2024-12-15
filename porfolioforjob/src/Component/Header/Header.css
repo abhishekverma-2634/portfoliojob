@@ -1,19 +1,93 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  background-color: #333;
+}
 .styleHeader {
-  /* background-color: red; */
+  padding: 10px 20px;
   font-size: 0.9rem;
   display: flex;
   justify-content: space-between;
+  max-width: 90%;
+  align-items: center;
+  color: white;
+  margin: auto;
 }
 .logoName {
-    display: flex;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.logoName p {
+  transition: color 0.5s;
+}
+.logoName p:hover {
+  color: #ff6347;
+  user-select: none;
 }
 .nav {
-    display: flex;
-    margin-top: 10px;
-    margin: auto;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  color: white;
+  gap: 1.5rem;
 }
-img{
-    height: 40px;
-    border-radius: 100px;
+img {
+  height: 40px;
+  border-radius: 100px;
+  align-items: center;
+  margin: 0 20px;
+}
+.nav a {
+  color: white;
+  transition: color 0.5s;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: #ff6347;
+}
+.nav li {
+  margin: 0 10px;
+  list-style: none;
+}
+.hamburgerMenu {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px){
+    .styleHeader {
+        
+        align-items: flex-start;
+    }
+    .nav {
+        display: none;
+        gap: 1rem;
+        width: 100%;
+        background-color: #333;
+        padding: 10px;
+        border-top: 1px solid #444;
+        flex-direction: column;
+
+
+    }
+    .nav.open {
+        display: flex;
+    }
+    .hamburgerMenu {
+        display: block;
+    }
+    button {
+        margin-top: 10px;
+    }
 }

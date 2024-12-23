@@ -1,0 +1,41 @@
+.flexbox {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  background-color: #e5e5e3;
+}
+.flexbox1 {
+    padding: 10px;
+}
+.image {
+  height: 500px;
+  width: 500px;
+}
+
+.bio {
+  max-width: 600px;
+  line-height: 1.6;
+  font-weight: 600;
+  color: #4b2690;
+  font-size: 1.5rem;
+}
+.heading {
+     color: #A74AC7;   
+}
+
+@media screen and (max-width: 576px) {
+    .flexbox {
+        flex-direction: column;
+        min-height: 70vh;
+    }
+    .image {
+        height: 300px;
+        width: 300px;
+    }
+    .bio {
+        font-size: 1rem;
+    }
+   
+}
+

@@ -8,16 +8,19 @@ body {
 }
 .header {
   background-color: #333;
+  z-index: 1000;
+
 }
 .styleHeader {
   padding: 10px 20px;
   font-size: 0.9rem;
   display: flex;
   justify-content: space-between;
-  max-width: 90%;
+  max-width: 98%;
   align-items: center;
   color: white;
   margin: auto;
+
 }
 .logoName {
   display: flex;
@@ -37,6 +40,7 @@ body {
   align-items: center;
   color: white;
   gap: 1.5rem;
+  margin-right: 10px;
 }
 img {
   height: 40px;
